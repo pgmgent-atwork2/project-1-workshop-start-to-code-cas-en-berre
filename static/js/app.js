@@ -93,20 +93,21 @@ function handleCardClick(event) {
     if (card1.value === card2.value) {
       // Match found
       playerScores[currentPlayer]++
-      flippedCards = [] // Reset flippedCards for the next turn
+      flippedCards = []
       updateScoreDisplay()
+
     } else {
       // No match, flip cards back after a delay
       setTimeout(() => {
         card1.element.classList.remove('flipped')
         card2.element.classList.remove('flipped')
-        flippedCards = [] // Reset flippedCards for the next turn
+        flippedCards = []
+
+        // Switch to the next player
+        currentPlayer = currentPlayer === 1 ? 2 : 1
+        updateScoreDisplay()
       }, 1000)
     }
-
-    // Switch to the next player
-    currentPlayer = currentPlayer === 1 ? 2 : 1
-    updateScoreDisplay()
   }
 }
 
@@ -124,17 +125,17 @@ function updateScoreDisplay() {
 
 // Function to reset the game
 function resetGame() {
-  playerScores = { 1: 0, 2: 0 };
-  currentPlayer = 1;
-  flippedCards = [];
-  updateScoreDisplay();
-  loadCards();
+  playerScores = { 1: 0, 2: 0 }
+  currentPlayer = 1
+  flippedCards = []
+  updateScoreDisplay()
+  loadCards()
 }
 
 // Add event listener to the reset button
-const resetButton = document.getElementById('reset');
+const resetButton = document.getElementById('reset')
 if (resetButton) {
-  resetButton.addEventListener('click', resetGame);
+  resetButton.addEventListener('click', resetGame)
 }
 
 loadCards()
