@@ -113,7 +113,7 @@
     justify-content: center;
     align-items: center;
     align-self: center;
-    gap: 5rem;
+    gap: 1.5rem;
 
     .tracker__points {
         font-weight: 600;
@@ -127,6 +127,13 @@
 
     justify-self: center;
     align-self: center;
+
+    flex-grow: 1;
+    display: contents;
+}
+
+.current-player__text {
+    padding-right: 1.5rem;
 }
 
 .btn {
@@ -134,7 +141,7 @@
     background-color: #F9F8FC;
     border-radius: 0.5rem;
 
-    height: 2rem;
+    height: 2.1rem;
 
     padding-left: 1rem;
     padding-right: 1rem;
