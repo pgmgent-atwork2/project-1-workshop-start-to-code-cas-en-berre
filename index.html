@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="static/css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory/title>
+    <title>Memory</title>
 </head>
 <body>
-    <h1>Memory</h1>
+    <header class="header">
+        <h1 class="header__title">Memory</h1>
+    </header>
 
-    <div id="grid">
-        <article class="card">
-            <p class="card__img"></p>
-        </article>
-        
-    </div>
+    <main class="main">
+            <section id="grid">
+                <article class="card">
+                    <p class="card__emblem">🐈</p>
+                </article>
+            
+            </section>
+            <section class="tracker">
+                <div class="tracker__player">
+                    <h2 class="tracker__title">
+                        Speler 1
+                    </h2>
+                    <p class="tracker__points" id="player2-points">
+
+                    </p>
+                </div>
+                <div class="tracker__player">
+                    <h2 class="tracker__title">
+                        Speler 2
+                    </h2>
+                    <p class="tracker__points" id="player2-points">
+                        
+                    </p>
+                </div>
+            </section>
+    </main>
 </body>
 <script src="static/js/app.js"></script>
 </html>
