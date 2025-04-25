@@ -96,7 +96,6 @@ function handleCardClick(event) {
       flippedCards = []
       updateScoreDisplay()
       checkGameOver()
-
     } else {
       // No match, flip cards back after a delay
       setTimeout(() => {
@@ -129,8 +128,7 @@ function updateScoreDisplay() {
     if (currentPlayer === 1) {
       player1Text.classList.add('active')
       player2Text.classList.remove('active')
-    }
-    else {
+    } else {
       player1Text.classList.remove('active')
       player2Text.classList.add('active')
     }
@@ -154,30 +152,30 @@ if (resetButton) {
 
 // Function check if the game is over
 function checkGameOver() {
-    const totalPairs = cards.length / 2
-    const matchedPairs = playerScores[1] + playerScores[2]
-    if (matchedPairs === totalPairs) {
-        displayEndScreen()
-    }
+  const totalPairs = cards.length / 2
+  const matchedPairs = playerScores[1] + playerScores[2]
+  if (matchedPairs === totalPairs) {
+    displayEndScreen()
+  }
 }
 
 // Function to display the end screen
 function displayEndScreen() {
-    const modal = document.getElementById('win')
-    const gameEnd = document.getElementById('game-end')
+  const modal = document.getElementById('win')
+  const gameEnd = document.getElementById('game-end')
 
-    if (playerScores[1] > playerScores[2]) {
-        gameEnd.textContent = `Speler 1 wint met ${playerScores[1]} punten!`
-    } else {
-        gameEnd.textContent = `Speler 2 wint met ${playerScores[2]} punten!`
-    }
+  if (playerScores[1] > playerScores[2]) {
+    gameEnd.textContent = `Speler 1 wint met ${playerScores[1]} punten!`
+  } else {
+    gameEnd.textContent = `Speler 2 wint met ${playerScores[2]} punten!`
+  }
 
-    modal.classList.remove('hidden')
+  modal.classList.remove('hidden')
 
-    const playAgainButton = document.getElementById('again')
-    playAgainButton.addEventListener('click', () => {
-        modal.classList.add('hidden')
-        resetGame()
-    })
+  const playAgainButton = document.getElementById('again')
+  playAgainButton.addEventListener('click', () => {
+    modal.classList.add('hidden')
+    resetGame()
+  })
 }
 loadCards()
