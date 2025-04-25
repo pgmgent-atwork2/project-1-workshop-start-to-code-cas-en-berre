@@ -59,10 +59,13 @@ function generateCardsHTML() {
 function loadCards() {
   const grid = document.getElementById('grid')
   grid.innerHTML = generateCardsHTML()
-}
 
-// Call the function to load cards
-loadCards()
+  // Add event listeners to the cards
+  const cardElements = grid.querySelectorAll('.card')
+  cardElements.forEach((card) => {
+    card.addEventListener('click', handleCardClick)
+  })
+}
 
 // Game logic
 let currentPlayer = 1
@@ -76,9 +79,15 @@ function handleCardClick(event) {
   if (!card || card.classList.contains('flipped') || flippedCards.length === 2)
     return
 
-    // Flip the card
-    card.classList.add('flipped')
+  card.classList.add('flipped')
 
-    
-    // Check if two cards are flippe
+  flippedCards.push({
+    id: card.dataset.pairId,
+    value: card.dataset.value,
+    element: card,
+  })
 }
+
+
+// Call the function to load cards
+loadCards()
