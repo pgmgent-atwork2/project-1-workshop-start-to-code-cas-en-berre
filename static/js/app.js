@@ -6,32 +6,32 @@ const cards = [
   { id: 2, value: 'dog', emoji: '🐶' },
   { id: 3, value: 'cat', emoji: '🐱' },
   { id: 4, value: 'cat', emoji: '🐱' },
-  { id: 5, value: 'fish', emoji: '🐟' },
-  { id: 6, value: 'fish', emoji: '🐟' },
-  { id: 7, value: 'bird', emoji: '🐦' },
-  { id: 8, value: 'bird', emoji: '🐦' },
-  { id: 9, value: 'lizard', emoji: '🦎' },
-  { id: 10, value: 'lizard', emoji: '🦎' },
-  { id: 11, value: 'turtle', emoji: '🐢' },
-  { id: 12, value: 'turtle', emoji: '🐢' },
-  { id: 13, value: 'rabbit', emoji: '🐰' },
-  { id: 14, value: 'rabbit', emoji: '🐰' },
-  { id: 15, value: 'hamster', emoji: '🐹' },
-  { id: 16, value: 'hamster', emoji: '🐹' },
-  { id: 17, value: 'frog', emoji: '🐸' },
-  { id: 18, value: 'frog', emoji: '🐸' },
-  { id: 19, value: 'snake', emoji: '🐍' },
-  { id: 20, value: 'snake', emoji: '🐍' },
-  { id: 21, value: 'ferret', emoji: '🦡' },
-  { id: 22, value: 'ferret', emoji: '🦡' },
-  { id: 23, value: 'parrot', emoji: '🦜' },
-  { id: 24, value: 'parrot', emoji: '🦜' },
-  { id: 25, value: 'mouse', emoji: '🐭' },
-  { id: 26, value: 'mouse', emoji: '🐭' },
-  { id: 27, value: 'goat', emoji: '🐐' },
-  { id: 28, value: 'goat', emoji: '🐐' },
-  { id: 29, value: 'cow', emoji: '🐄' },
-  { id: 30, value: 'cow', emoji: '🐄' },
+//   { id: 5, value: 'fish', emoji: '🐟' },
+//   { id: 6, value: 'fish', emoji: '🐟' },
+//   { id: 7, value: 'bird', emoji: '🐦' },
+//   { id: 8, value: 'bird', emoji: '🐦' },
+//   { id: 9, value: 'lizard', emoji: '🦎' },
+//   { id: 10, value: 'lizard', emoji: '🦎' },
+//   { id: 11, value: 'turtle', emoji: '🐢' },
+//   { id: 12, value: 'turtle', emoji: '🐢' },
+//   { id: 13, value: 'rabbit', emoji: '🐰' },
+//   { id: 14, value: 'rabbit', emoji: '🐰' },
+//   { id: 15, value: 'hamster', emoji: '🐹' },
+//   { id: 16, value: 'hamster', emoji: '🐹' },
+//   { id: 17, value: 'frog', emoji: '🐸' },
+//   { id: 18, value: 'frog', emoji: '🐸' },
+//   { id: 19, value: 'snake', emoji: '🐍' },
+//   { id: 20, value: 'snake', emoji: '🐍' },
+//   { id: 21, value: 'ferret', emoji: '🦡' },
+//   { id: 22, value: 'ferret', emoji: '🦡' },
+//   { id: 23, value: 'parrot', emoji: '🦜' },
+//   { id: 24, value: 'parrot', emoji: '🦜' },
+//   { id: 25, value: 'mouse', emoji: '🐭' },
+//   { id: 26, value: 'mouse', emoji: '🐭' },
+//   { id: 27, value: 'goat', emoji: '🐐' },
+//   { id: 28, value: 'goat', emoji: '🐐' },
+//   { id: 29, value: 'cow', emoji: '🐄' },
+//   { id: 30, value: 'cow', emoji: '🐄' },
 ]
 
 // Shuffle the cards
@@ -95,6 +95,7 @@ function handleCardClick(event) {
       playerScores[currentPlayer]++
       flippedCards = []
       updateScoreDisplay()
+      checkGameOver()
 
     } else {
       // No match, flip cards back after a delay
@@ -116,11 +117,24 @@ function updateScoreDisplay() {
   const player1Score = document.getElementById('player1-points')
   const player2Score = document.getElementById('player2-points')
   const currentPlayerDisplay = document.getElementById('current-player')
+  const player1Text = document.getElementById('player1-text')
+  const player2Text = document.getElementById('player2-text')
 
   if (player1Score) player1Score.textContent = playerScores[1]
   if (player2Score) player2Score.textContent = playerScores[2]
   if (currentPlayerDisplay)
     currentPlayerDisplay.textContent = `Speler ${currentPlayer}`
+
+  if (player1Text && player2Text) {
+    if (currentPlayer === 1) {
+      player1Text.classList.add('active')
+      player2Text.classList.remove('active')
+    }
+    else {
+      player1Text.classList.remove('active')
+      player2Text.classList.add('active')
+    }
+  }
 }
 
 // Function to reset the game
@@ -138,4 +152,32 @@ if (resetButton) {
   resetButton.addEventListener('click', resetGame)
 }
 
+// Function check if the game is over
+function checkGameOver() {
+    const totalPairs = cards.length / 2
+    const matchedPairs = playerScores[1] + playerScores[2]
+    if (matchedPairs === totalPairs) {
+        displayEndScreen()
+    }
+}
+
+// Function to display the end screen
+function displayEndScreen() {
+    const modal = document.getElementById('win')
+    const gameEnd = document.getElementById('game-end')
+
+    if (playerScores[1] > playerScores[2]) {
+        gameEnd.textContent = `Speler 1 wint met ${playerScores[1]} punten!`
+    } else {
+        gameEnd.textContent = `Speler 2 wint met ${playerScores[2]} punten!`
+    }
+
+    modal.classList.remove('hidden')
+
+    const playAgainButton = document.getElementById('again')
+    playAgainButton.addEventListener('click', () => {
+        modal.classList.add('hidden')
+        resetGame()
+    })
+}
 loadCards()
