@@ -14,7 +14,7 @@
 
 .header {
     .header__title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -27,6 +27,8 @@
     max-width: 85vw;
 
     width: 100%;
+
+    margin-bottom: 1rem;
 
     .main__header {
         display: flex;
@@ -52,7 +54,7 @@
     align-items: center;
     align-self: center;
     justify-self: center;
-    width: 6rem;
+    width: 5.75rem;
     aspect-ratio: 1;
     cursor: pointer;
 
@@ -120,8 +122,11 @@
 }
 
 .current-player {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
+
+    justify-self: center;
+    align-self: center;
 }
 
 .btn {
@@ -140,6 +145,21 @@
     &:active {
         transform: translateY(5px);
     }
+}
+
+.btn--link {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+    text-decoration: none;
+    color: black;
+
+    transition: transform 75ms ease;
+
+    &:active {
+        transform: translateY(5px);
+    }
+
 }
 
 .modal {
