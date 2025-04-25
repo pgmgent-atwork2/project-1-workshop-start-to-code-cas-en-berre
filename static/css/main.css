@@ -184,3 +184,7 @@
 .hidden {
     display: none;
 }
+
+.active {
+    color: rgb(17, 199, 17);
+}
