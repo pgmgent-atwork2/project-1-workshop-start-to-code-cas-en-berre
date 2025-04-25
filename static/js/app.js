@@ -86,8 +86,40 @@ function handleCardClick(event) {
     value: card.dataset.value,
     element: card,
   })
+
+  if (flippedCards.length === 2) {
+    const [card1, card2] = flippedCards
+
+    if (card1.value === card2.value) {
+      // Match found
+      playerScores[currentPlayer]++
+      flippedCards = [] // Reset flippedCards for the next turn
+      updateScoreDisplay()
+    } else {
+      // No match, flip cards back after a delay
+      setTimeout(() => {
+        card1.element.classList.remove('flipped')
+        card2.element.classList.remove('flipped')
+        flippedCards = [] // Reset flippedCards for the next turn
+      }, 1000)
+    }
+
+    // Switch to the next player
+    currentPlayer = currentPlayer === 1 ? 2 : 1
+    updateScoreDisplay()
+  }
 }
 
+// Function to update the score display
+function updateScoreDisplay() {
+  const player1Score = document.getElementById('player1-points')
+  const player2Score = document.getElementById('player2-points')
+  const currentPlayerDisplay = document.getElementById('current-player')
 
-// Call the function to load cards
+  if (player1Score) player1Score.textContent = playerScores[1]
+  if (player2Score) player2Score.textContent = playerScores[2]
+  if (currentPlayerDisplay)
+    currentPlayerDisplay.textContent = `Speler ${currentPlayer}`
+}
+
 loadCards()
