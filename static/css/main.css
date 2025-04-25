@@ -1,1 +1,50 @@
 @import url(reset.css);
+
+.body {
+    font-family: "Quicksand", sans-serif;
+    color: #6E59A5;
+    background-color: #F3F0FC;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    width: 100%;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    width: 6rem;
+    aspect-ratio: 1;
+
+    background-color: #E5DEFF;
+}
+
+.tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 5rem;
+}

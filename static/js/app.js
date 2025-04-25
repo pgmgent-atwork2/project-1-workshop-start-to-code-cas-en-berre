@@ -46,10 +46,10 @@ function generateCardsHTML() {
   return shuffledCards
     .map(
       (card) => `
-        <div class="card" data-pair-id="${card.id}" data-value="${card.value}">
-          <div class="card-back">?</div>
-          <div class="card-front">${card.emoji}</div>
-        </div>
+        <article class="card" data-pair-id="${card.id}" data-value="${card.value}">
+          <div class="card__back">?</div>
+          <div class="card__front">${card.emoji}</div>
+        </article>
       `
     )
     .join('')
