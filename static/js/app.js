@@ -65,3 +65,20 @@ function loadCards() {
 loadCards()
 
 // Game logic
+let currentPlayer = 1
+let playerScores = { 1: 0, 2: 0 }
+let flippedCards = []
+
+// Function to handle card click
+function handleCardClick(event) {
+  const card = event.target.closest('.card')
+
+  if (!card || card.classList.contains('flipped') || flippedCards.length === 2)
+    return
+
+    // Flip the card
+    card.classList.add('flipped')
+
+    
+    // Check if two cards are flippe
+}
