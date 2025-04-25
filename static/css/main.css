@@ -27,6 +27,13 @@
     max-width: 85vw;
 
     width: 100%;
+
+    .main__header {
+        display: flex;
+        max-width: 60vw;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .grid {
@@ -73,7 +80,15 @@
     }
 }
 
+.card.flipped {
+    .card__front {
+        opacity: 100%;
+    }
 
+    .card__back {
+        opacity: 0%;
+    }
+}
 
 .tracker {
     display: flex;
@@ -81,4 +96,25 @@
     align-items: center;
     align-self: center;
     gap: 5rem;
+}
+
+.current-player {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    border: 1px solid #9B8BF6;
+    background-color: #F9F8FC;
+    border-radius: 0.5rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
+
+    transition: transform 75ms ease;
+
+    &:active {
+        transform: translateY(5px);
+    }
 }

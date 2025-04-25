@@ -9,34 +9,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory</title>
 </head>
+
 <body class="body">
+
     <header class="header">
         <h1 class="header__title">Memory</h1>
     </header>
 
     <main class="main">
-        <section class="tracker">
-            <div class="tracker__player">
-                <h2 class="tracker__title">
-                    Speler 1
-                </h2>
-                <p class="tracker__points" id="player1-points">
-
+        <section class="main__header">
+            <div class="tracker">
+                <div class="tracker__player">
+                    <h2 class="tracker__title">
+                        Speler 1
+                    </h2>
+                    <p class="tracker__points" id="player1-points">
+                    </p>
+                </div>
+                <div class="tracker__player">
+                    <h2 class="tracker__title">
+                        Speler 2
+                    </h2>
+                    <p class="tracker__points" id="player2-points">
+            
+                    </p>
+                </div>
+            </div>
+            <div class="current-player">
+                <p class="current-player__text">
+                    Nu aan: <span id="current-player"></span>
                 </p>
             </div>
-            <div class="tracker__player">
-                <h2 class="tracker__title">
-                    Speler 2
-                </h2>
-                <p class="tracker__points" id="player2-points">
-                    
-                </p>
-            </div>
+            <button class="btn btn--reset" id="reset">
+                Reset
+            </button>
         </section>
             <section class="grid" id="grid">
             
             </section>
     </main>
+    
+    <script src="static/js/app.js"></script>
 </body>
-<script src="static/js/app.js"></script>
+
 </html>
