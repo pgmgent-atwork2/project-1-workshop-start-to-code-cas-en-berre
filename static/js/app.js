@@ -122,4 +122,19 @@ function updateScoreDisplay() {
     currentPlayerDisplay.textContent = `Speler ${currentPlayer}`
 }
 
+// Function to reset the game
+function resetGame() {
+  playerScores = { 1: 0, 2: 0 };
+  currentPlayer = 1;
+  flippedCards = [];
+  updateScoreDisplay();
+  loadCards();
+}
+
+// Add event listener to the reset button
+const resetButton = document.getElementById('reset');
+if (resetButton) {
+  resetButton.addEventListener('click', resetGame);
+}
+
 loadCards()
