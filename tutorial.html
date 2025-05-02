@@ -185,186 +185,222 @@
                         </p>
                     </div>
 
-                    <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="XJJZydq"
-                        data-pen-title="Untitled" data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/XJJZydq">
-                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="codepen__container">
+                        <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="XJJZydq"
+                            data-pen-title="Untitled" data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/XJJZydq">
+                                    Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </div>
                 </li>
 
-                <li>
-                    <h3>Stap 4: De HTML-structuur van de game:</h3>
-                    <p>Nu we onze bestanden hebben gekoppeld, kunnen we beginnen met het bouwen van de basislay-out van
-                        onze memory game in
-                        index.html.</p>
+                <li class="tutorial-part__item">
+                    <div class="tutorial-part__text">
+                        <h3 class="tutorial-part__title tutorial-part__title--small">Stap 4: De HTML-structuur van de game:</h3>
+                        <p class="tutorial-part__description">Nu we onze bestanden hebben gekoppeld, kunnen we beginnen met het bouwen van de basislay-out van
+                            onze memory game in
+                            index.html.</p>
+                    </div>
 
-                    <h4>We beginnen met het bouwen van een header.</h4>
-                    <p>Een header is het bovenste gedeelte van je webpagina. In dit geval gebruiken we het om de titel
-                        van het spel te tonen,
-                        zodat spelers meteen weten dat ze een memory game gaan spelen.</p>
-                    <p>Voeg deze HTML toe in het <code>&lt;body&gt;</code>-gedeelte van je <code>index.html:</code></p>
-
-                    <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="qEExQPw"
-                        data-pen-title="Untitled" data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/qEExQPw">
+                    <div class="tutorial-part__text">
+                        <h4 class="tutorial-part__title tutorial-part__title--small">We beginnen met het bouwen van een header.</h4>
+                        <p class="tutorial-part__description">Een header is het bovenste gedeelte van je webpagina. In dit geval gebruiken we het om de titel
+                            van het spel te tonen,
+                            zodat spelers meteen weten dat ze een memory game gaan spelen.</p>
+                        <p class="tutorial-part__description">Voeg deze HTML toe in het <code>&lt;body&gt;</code>-gedeelte van je <code>index.html:</code></p>
+                    </div>
+                        
+                        <div class="codepen__container">
+                            <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="qEExQPw"
+                            data-pen-title="Untitled" data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/qEExQPw">
                                 Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                        </div>
 
-                    <p>Wil je weten wat al deze code precies betekent? Neem een kijkje op <a
+                    <p class="tutorial-part__tip">Wil je weten wat al deze code precies betekent? Neem een kijkje op <a
                             href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs
                             (HTML)</a>. We nemen dit
                         nu niet allemaal door omdat we de tijd willen gebruiken om zelf te bouwen! 💪</p>
                 </li>
-                <li>
-                    <h3>Stap 5: Bouwen van het scoregedeelte</h3>
-                    <p>We voegen een tracker toe met daarin:</p>
-                    <ul>
-                        <li>De namen van beide spelers (Speler 1 en Speler 2)</li>
-                        <li>Hun scores</li>
-                        <li>Een aanduiding van wie aan de beurt is</li>
-                    </ul>
-                    <p>Dit is belangrijk omdat een memory game vaak met 2 spelers gespeeld wordt en het spel moet
-                        bijhouden wie wanneer aan
-                        de beurt is en wie gewonnen heeft.</p>
-                    <p>Voeg deze HTML toe onder de header in je <code>index.html</code> bestand:</p>
+                <li class="tutorial-part__item">
+                    <div class="tutorial-part__text">
+                        <h3 class="tutorial-part__title tutorial-part__title--small">Stap 5: Bouwen van het scoregedeelte</h3>
+                        <p class="tutorial-part__description">We voegen een tracker toe met daarin:</p>
+                        <ul class="tutorial-part__list tutorial-part__list--dotted">
+                            <li class="tutorial-part__item">De namen van beide spelers (Speler 1 en Speler 2)</li>
+                            <li class="tutorial-part__item">Hun scores</li>
+                            <li class="tutorial-part__item">Een aanduiding van wie aan de beurt is</li>
+                        </ul>
+                        <p class="tutorial-part__description">Dit is belangrijk omdat een memory game vaak met 2 spelers gespeeld wordt en het spel moet
+                            bijhouden wie wanneer aan
+                            de beurt is en wie gewonnen heeft.</p>
+                        <p class="tutorial-part__description">Voeg deze HTML toe onder de header in je <code>index.html</code> bestand:</p>
+                    </div>
 
-                    <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="QwwQJQq"
-                        data-pen-title="Untitled" data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/QwwQJQq">
-                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="codepen__container">
+                        <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="QwwQJQq"
+                            data-pen-title="Untitled" data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/QwwQJQq">
+                                    Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </div>
 
-                    <p>Wat gebeurt hier precies?</p>
-                    <ul>
-                        <li>Elke speler krijgt een blok met zijn/haar naam en score.</li>
-                        <li>De actieve speler krijgt de extra klasse <code>active</code> (later in CSS en JS doen we
-                            daar iets mee).</li>
-                        <li>Het <code>span</code>-element met <code>id="current-player"</code> wordt in JavaScript
-                            gebruikt om live aan te
-                            geven wie er aan zet is.</li>
-                    </ul>
+                    <div class="tutorial-part__text">
+                        <p class="tutorial-part__title tutorial-part__title--xs">Wat gebeurt hier precies?</p>
+                        <ul class="tutorial-part__list tutorial-part__list--dotted">
+                            <li class="tutorial-part__item">Elke speler krijgt een blok met zijn/haar naam en score.</li>
+                            <li class="tutorial-part__item">De actieve speler krijgt de extra klasse <code>active</code> (later in CSS en JS doen we
+                                daar iets mee).</li>
+                            <li class="tutorial-part__item">Het <code>span</code>-element met <code>id="current-player"</code> wordt in JavaScript
+                                gebruikt om live aan te
+                                geven wie er aan zet is.</li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <h3>Stap 6: Het bouwen van de resetknop</h3>
-                    <p>Een resetknop is belangrijk om het spel opnieuw te starten in het geval dat er iets fout loopt.
-                    </p>
-                    <p>Voeg dit HTML-gedeelte toe onderaan de tracker-sectie in je <code>index.html</code> bestand:</p>
+                <li class="tutorial-part__item">
+                    <div class="tutorial-part__text">
+                        <h3 class="tutorial-part__title tutorial-part__title--small">Stap 6: Het bouwen van de resetknop</h3>
+                        <p>Een resetknop is belangrijk om het spel opnieuw te starten in het geval dat er iets fout loopt.
+                        </p>
+                        <p>Voeg dit HTML-gedeelte toe onderaan de tracker-sectie in je <code>index.html</code> bestand:</p>
+                    </div>
 
-                    <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="bNNLQMW"
-                        data-pen-title="Untitled" data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/bNNLQMW">
-                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="codepen__container">
+                        <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="bNNLQMW"
+                            data-pen-title="Untitled" data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/bNNLQMW">
+                                    Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </div>
 
-                    <p>Wat doet dit?</p>
-                    <ul>
-                        <li>De <code>&lt;button&gt;</code> met <code>id="reset"</code> gebruiken we straks in JavaScript
-                            om het spel
-                            opnieuw te starten.</li>
-                        <li>De klassen <code>btn</code>, <code>btn--reset</code>, en <code>btn--link</code> gaan we in
-                            de CSS stylen.
-                        </li>
-                    </ul>
+                    <div class="tutorial-part__text">
+                        <p class="tutorial-part__title tutorial-part__title--xs">Wat doet dit?</p>
+                        <ul class="tutorial-part__list tutorial-part__list--dotted">
+                            <li class="tutorial-part__item">De <code>&lt;button&gt;</code> met <code>id="reset"</code> gebruiken we straks in JavaScript
+                                om het spel
+                                opnieuw te starten.</li>
+                            <li class="tutorial-part__item">De klassen <code>btn</code>, <code>btn--reset</code>, en <code>btn--link</code> gaan we in
+                                de CSS stylen.
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li>
-                    <h3>Stap 7: Het kaarten-grid bouwen</h3>
-                    <p>Een grid is een overzichtelijke manier om elementen in rijen en kolommen te plaatsen. In ons
-                        geval gebruiken we
-                        het om de memorykaartjes netjes naast en onder elkaar te tonen.</p>
-                    <p>Voeg dit HTML-gedeelte toe onder de navigatie-div in je <code>&lt;main&gt;</code>:</p>
+                <li class="tutorial-part__item">
+                    <div class="tutorial-part__text">
+                        <h3 class="tutorial-part__title tutorial-part__title--small">Stap 7: Het kaarten-grid bouwen</h3>
+                        <p class="tutorial-part__description">Een grid is een overzichtelijke manier om elementen in rijen en kolommen te plaatsen. In ons
+                            geval gebruiken we
+                            het om de memorykaartjes netjes naast en onder elkaar te tonen.</p>
+                        <p>Voeg dit HTML-gedeelte toe onder de navigatie-div in je <code>&lt;main&gt;</code>:</p>
+                    </div>
 
-                    <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="PwwQxab"
-                        data-pen-title="Untitled" data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/PwwQxab">
-                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="codepen__container">
+                        <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="PwwQxab"
+                            data-pen-title="Untitled" data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/PwwQxab">
+                                    Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </div>
 
-                    <p>Wat doet dit?</p>
-                    <ul>
-                        <li>De <code>&lt;section&gt;</code> met de klasse <code>grid</code> dient als container voor
-                            alle kaarten.</li>
-                        <li>Het <code>id="grid"</code> gebruiken we straks in JavaScript om de kaarten dynamisch toe te
-                            voegen (we typen
-                            ze dus niet handmatig uit in HTML).</li>
-                        <li>De styling van het grid regelen we in CSS, zodat de kaarten automatisch mooi worden
-                            uitgelijnd.</li>
-                    </ul>
-                    <p>Nu hebben we de volledige structuur van het spel klaar! In de volgende stap voegen we een popup
+                    <div class="tutorial-part__text">
+                        <p class="tutorial-part__title tutorial-part__title--xs">Wat doet dit?</p>
+                        <ul class="tutorial-part__list tutorial-part__list--dotted">
+                            <li class="tutorial-part__item">De <code>&lt;section&gt;</code> met de klasse <code>grid</code> dient als container voor
+                                alle kaarten.</li>
+                            <li class="tutorial-part__item">Het <code>id="grid"</code> gebruiken we straks in JavaScript om de kaarten dynamisch toe te
+                                voegen (we typen
+                                ze dus niet handmatig uit in HTML).</li>
+                            <li class="tutorial-part__item">De styling van het grid regelen we in CSS, zodat de kaarten automatisch mooi worden
+                                uitgelijnd.</li>
+                        </ul>
+                    </div>
+                    <p class="tutorial-part__tip">Nu hebben we de volledige structuur van het spel klaar! In de volgende stap voegen we een popup
                         toe voor wanneer
                         iemand wint.</p>
                 </li>
-                <li>
-                    <h3>Stap 8: Win-melding (popup) toevoegen</h3>
-                    <p>Een popup wordt vaak gebouwd met een combinatie van HTML (de structuur), CSS (de opmaak en
-                        zichtbaarheid) en
-                        JavaScript (wanneer het verschijnt).</p>
-                    <p>Voeg dit HTML-gedeelte toe onder de <code>&lt;/main&gt;</code> tag in je <code>index.html</code>
-                        bestand:</p>
+                <li class="tutorial-part__item">
+                    <div class="tutorial-part__text">
+                        <h3 class="tutorial-part__title tutorial-part__title--small">Stap 8: Win-melding (popup) toevoegen</h3>
+                        <p class="tutorial-part__description">Een popup wordt vaak gebouwd met een combinatie van HTML (de structuur), CSS (de opmaak en
+                            zichtbaarheid) en
+                            JavaScript (wanneer het verschijnt).</p>
+                        <p class="tutorial-part__description">Voeg dit HTML-gedeelte toe onder de <code>&lt;/main&gt;</code> tag in je <code>index.html</code>
+                            bestand:</p>
+                    </div>
 
-                    <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="YPPeRjX"
-                        data-pen-title="Untitled" data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/YPPeRjX">
-                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="codepen__container">
+                        <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="YPPeRjX"
+                            data-pen-title="Untitled" data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/YPPeRjX">
+                                    Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </div>
 
-                    <p>🧠 Wat doet dit?</p>
-                    <ul>
-                        <li>De <code>&lt;div&gt;</code> met <code>modal__background</code> is de achtergrond die het
-                            scherm donker maakt
-                            tijdens de popup.</li>
-                        <li>Het <code>modal</code>-element is het venster zelf met daarin:
-                            <ul>
-                                <li>Een titel die via JavaScript aangepast wordt (<code>id="game-end"</code>).</li>
-                                <li>Een knop om opnieuw te starten (<code>id="again"</code>).</li>
-                            </ul>
-                        </li>
-                        <li>De klasse <code>hidden</code> zorgt ervoor dat dit popupvenster verborgen blijft tot het
-                            spel afgelopen is.
-                        </li>
-                    </ul>
+                    <div class="tutorial-part__text">
+                        <p class="tutorial-part__title tutorial-part__title--xs">🧠 Wat doet dit?</p>
+                        <ul class="tutorial-part__list tutorial-part__list--dotted">
+                            <li class="tutorial-part__item">De <code>&lt;div&gt;</code> met <code>modal__background</code> is de achtergrond die het
+                                scherm donker maakt
+                                tijdens de popup.</li>
+                            <li class="tutorial-part__item">Het <code>modal</code>-element is het venster zelf met daarin:
+                                <ul>
+                                    <li class="tutorial-part__item">Een titel die via JavaScript aangepast wordt (<code>id="game-end"</code>).</li>
+                                    <li class="tutorial-part__item">Een knop om opnieuw te starten (<code>id="again"</code>).</li>
+                                </ul>
+                            </li>
+                            <li class="tutorial-part__item">De klasse <code>hidden</code> zorgt ervoor dat dit popupvenster verborgen blijft tot het
+                                spel afgelopen is.
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <p>We hebben nu alle visuele elementen van het spel op hun plaats staan.</p>
-                <p>➡️ Klaar om door te gaan naar het CSS-gedeelte, waarin we alles mooi gaan opmaken.</p>
+                <div class="tutorial-part__tip">
+                    <p class="tutorial-part__description">We hebben nu alle visuele elementen van het spel op hun plaats staan.</p>
+                    <p class="tutorial-part__description">➡️ Klaar om door te gaan naar het CSS-gedeelte, waarin we alles mooi gaan opmaken.</p>
+                </div>
             </ul>
         </section>
 
-        <h3>CSS:</h3>
+        <h3 class="tutorial-part__title tutorial-part__title--small">CSS:</h3>
         <section>
             <ul>
-                <li>
-                    <h3>Stap 1: Het stylen van de game met CSS:</h3>
+                <li class="tutorial-part__item">
+                    <h3 class="tutorial-part__title tutorial-part__title--small">Stap 1: Het stylen van de game met CSS:</h3>
                     <p>Nu we de HTML-elementen hebben toegevoegd, kunnen we beginnen met het stylen van de game met CSS. Open hiervoor het bestand <code> main.css </code></p>
                 </li>
-                <li>
-                    <h3>Stap 2: Kopieer de code voor het design van de app.</h3>
+                <li class="tutorial-part__item">
+                    <h3 class="tutorial-part__title tutorial-part__title--small">Stap 2: Kopieer de code voor het design van de app.</h3>
                     <p>Kopieer deze code in je main.css</p>
 
-                    <p class="codepen" data-height="300" data-default-tab="css" data-slug-hash="qEExQzB" data-pen-title="Untitled"
-                        data-user="Cas-Verheye"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/qEExQzB">
-                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    <div class="codepen__container">
+                        <p class="codepen" data-height="300" data-default-tab="css" data-slug-hash="qEExQzB" data-pen-title="Untitled"
+                            data-user="Cas-Verheye"
+                            style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/qEExQzB">
+                                    Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    </div>
 
                     <p>Wil je weten wat al deze code precies betekent? Neem een kijkje op <a
                             href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs
