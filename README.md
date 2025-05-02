@@ -5,9 +5,7 @@ A two-player memory game built with HTML, CSS, and JavaScript. This project incl
 
 Play the game [here.](https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-cas-en-berre/)
 
-
-
-
+Look at our brainstorm [here.](https://www.figma.com/board/ksiGsoFSfkZv4j87J6cXoW/Untitled?node-id=0-1&t=HZi385rsr9HxVwX7-1)
 
 ## Features
 
