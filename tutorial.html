@@ -373,6 +373,210 @@
                 </li>
             </ul>
         </section>
+
+        <h3>JavaScript:</h3>
+        <p>Nu we klaar zijn met de structuur en het stylen van onze game kunnen we beginnen met het programmeren van de logica en functionaliteit in JavaScript.</p>
+        <p>Open hiervoor het bestand <code>app.js</code>.</p>
+        <section>
+            <ul>
+                <li>
+                    <h3>Stap 1: Het definiëren van de speelkaarten.</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="oggEJqB" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/oggEJqB">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat gebeurt hier?</h4>
+                            <p>We maken een lijst (array) van kaart-objecten.</p>
+                            <ul>
+                                <li><strong>id:</strong> een uniek nummer</li>
+                                <li><strong>value:</strong> het type dier (zoals 'dog')</li>
+                                <li><strong>emoji:</strong> hoe de kaart eruitziet</li>
+                            </ul>
+                            <p>Er zijn 30 kaarten in totaal, 15 paren (2 van elk dier).</p>
+                        </article>
+                        <article>
+                            <h4>Waarom doen we dit?</h4>
+                            <p>Dit is de basis van het spel: kaarten die je moet omdraaien en proberen te matchen.</p>
+                        </article>
+                    </section>
+                </li>
+
+                <li>
+                    <h3>Stap 2: Kaarten schudden</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="EaaQGpP" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/EaaQGpP">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat doet deze functie?</h4>
+                            <ul>
+                                <li>Neemt een array (in ons geval onze speelkaarten) en shud deze willekeurig.</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Waarom doen we dit?</h4>
+                            <p>Zonder schudden liggen de paren altijd op dezelfde plek. Dat zou saai zijn!</p>
+                        </article>
+                    </section>
+                </li>
+
+                <li>
+                    <h3>Stap 3: Het dynamisch genereren van de speelkaarten.</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="PwwQXvd" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/PwwQXvd">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat gebeurt hier?</h4>
+                            <ul>
+                                <li>We schudden de kaarten.</li>
+                                <li>Daarna maken we voor elke kaart een stukje HTML aan (met <code>map</code>).</li>
+                                <li>Elk kaartje heeft een voorkant (met emoji) en een achterkant (met <code>?</code>).</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Waarom?</h4>
+                            <ul>
+                                <li>Zo verschijnen de kaartjes op het scherm.</li>
+                            </ul>
+                        </article>
+                    </section>
+                </li>
+
+                <li>
+                    <h3>Stap 4: Kaarten op de pagina tonen.</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="dPPdaoJ" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/dPPdaoJ">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat doet dit?</h4>
+                            <ul>
+                                <li>Haalt het HTML-element met ID <code>grid</code> op.</li>
+                                <li>Zet daar de kaarten in.</li>
+                                <li>Daarna voegen we voor elke kaart een klik-gebeurtenis toe.</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Waarom belangrijk?</h4>
+                            <ul>
+                                <li>Dit zorgt ervoor dat de kaarten op de pagina verschijnen én dat je erop kunt klikken.</li>
+                            </ul>
+                        </article>
+                    </section>
+                </li>
+
+                <li>
+                    <h3>Stap 5: Score bijhouden</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="raaJPeM" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/raaJPeM">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat is dit?</h4>
+                            <ul>
+                                <li><strong>currentPlayer:</strong> wie is nu aan de beurt?</li>
+                                <li><strong>playerScores:</strong> houdt bij hoeveel punten elke speler heeft.</li>
+                                <li><strong>flippedCards:</strong> een lijst van de kaarten die nu zijn omgedraaid.</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Waarom?</h4>
+                            <ul>
+                                <li>Het spel moet weten wie aan de beurt is en of er een match is.</li>
+                            </ul>
+                        </article>
+                    </section>
+                </li>
+
+                <li>
+                    <h3>Stap 6: Het klikken van de kaart</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="ZYYrwpW" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/ZYYrwpW">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat doet dit?</h4>
+                            <ul>
+                                <li>Als je op een kaart klikt:</li>
+                                <ul>
+                                    <li>Kijkt of je al 2 kaarten hebt omgedraaid.</li>
+                                    <li>Draait de kaart om (voegt <code>.flipped</code> toe).</li>
+                                    <li>Voegt de kaart toe aan <code>flippedCards</code>.</li>
+                                </ul>
+                                <li>Als er 2 kaarten zijn omgedraaid:</li>
+                                <ul>
+                                    <li>Zijn ze gelijk? Dan krijg je een punt.</li>
+                                    <li>Niet gelijk? Dan draaien we ze na 1 seconde terug en wisselen van speler.</li>
+                                </ul>
+                            </ul>
+                        </article>
+                    </section>
+                </li>
+
+                <li>
+                    <h3>Stap 7: Weergeven van de score en wie aan de beurt is.</h3>
+                    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="myyXvOz" data-pen-title="Untitled"
+                        data-user="Cas-Verheye"
+                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cas-Verheye/pen/myyXvOz">
+                                Untitled</a> by Cas Verheye (<a href="https://codepen.io/Cas-Verheye">@Cas-Verheye</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                    <section>
+                        <article>
+                            <h4>Wat doet deze functie?</h4>
+                            <ul>
+                                <li>Laat zien hoeveel punten elke speler heeft.</li>
+                                <li>Laat zien wie aan de beurt is.</li>
+                                <li>Kleurt de actieve speler extra op het scherm (bijvoorbeeld met <code>.active</code>).</li>
+                            </ul>
+                        </article>
+                    </section>
+                </li>
+
+                <li>Stap 8:</li>
+            </ul>
+        </section>
     </main>
 </body>
 
