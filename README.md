@@ -3,6 +3,9 @@
 
 A two-player memory game built with HTML, CSS, and JavaScript. This project includes both the game and a detailed tutorial for beginners.
 
+Play the game [here.](https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-cas-en-berre/)
+
+
 
 
 
